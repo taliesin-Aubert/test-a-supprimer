@@ -1,0 +1,5 @@
+https://developer.mozilla.org/fr/docs/Web/JavaScript/guide_de_demarrage
+https://www.alsacreations.com/article/lire/1402-web-storage-localstorage-sessionstorage.html
+https://openclassrooms.com/forum/sujet/changer-le-style-du-site-avec-un-bouton-1
+https://developer.mozilla.org/fr/docs/Web/CSS/background
+https://www.w3schools.com/cssref/pr_background-image.asp

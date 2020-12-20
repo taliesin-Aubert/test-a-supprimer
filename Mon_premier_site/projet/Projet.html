@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<!--
+		   ________   _________   _________   ____________
+		  / __  / /  / __  /  /  /  / __  /  /____   ____/
+		 / /_/ / /  / /_/ /  /__/  / /_/ /       /  /
+	    / __  / /  /  ___/  ___   / __  /       /  /
+	   / / / / /__/  /  /  /  /  / / / /       /  /
+	  /_/ /_/____/__/  /__/  /__/_/ /_/       /__/
+		
+		
+		-->
+		<title>Mon premier site</title>
+		<meta charset="utf-8"/>
+		<meta name="keywords" content="Taliesin, Mon_premier_site, projet">
+		<meta name="description" content="ici, je metterai des projet que j'aurai fait">		
+		<link rel="stylesheet" type="text/css" href="css/OriginalStyle.css" id="testcss"/>
+		<script type="text/javascript"> 
+			console.log(sessionStorage.getItem("fond"));
+			if(sessionStorage.getItem("fond")!=null) {
+			var couleur = sessionStorage.getItem("fond");
+			console.log(couleur);
+            document.getElementById("testcss").setAttribute("href", couleur);
+			}
+		</script>
+		<link rel="icon" href="image/plante piranha-T.png"/>
+	</head>
+	<body>
+		<header id="barre_nav">
+			<h1>	
+				Projet
+			</h1>
+		</header>
+		<nav>
+			<a href="" class="actif" target=""> <input type="image" id="projet" src="image/projet.png"/> </a>
+			<a href="file:///C:/Users/talie/Desktop/Tavail/Mon_premier_site/liens/Liens.html" target=""> <input type="image" id="liens" src="image/liens.png"/> </a>
+			<a href="file:///C:/Users/talie/Desktop/Tavail/Mon_premier_site/changer/changer.html" target=""> <input type="image" id="changer" src="image/changer.png"/> </a>
+		</nav>
+		<h2> 
+			Projet 1: Projet réveil (projet fait en TSTI2D avec 2 autres personnes)
+			<a href="mini projet reveil.zip" download="mini projet reveil.zip">Télécharger projet réveil</a> </br>
+
+
+
+		</h2>
+		<h3>
+			<a href="file:///C:/Users/talie/Desktop/Tavail/Mon_premier_site/Mon_premier_site.html" target=""> <input type="image" id="moins" src="image/return.png"/> </a>
+		</h3>
+		<footer>
+			<a href="#" > <img id="gif_plante" src="image/gif plante.gif"/> </a>
+		</footer>
+	</body>
+</html>

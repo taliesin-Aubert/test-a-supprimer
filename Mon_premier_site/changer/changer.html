@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<!--
+		   ________   _________   _________   ____________
+		  / __  / /  / __  /  /  /  / __  /  /____   ____/
+		 / /_/ / /  / /_/ /  /__/  / /_/ /       /  /
+	    / __  / /  /  ___/  ___   / __  /       /  /
+	   / / / / /__/  /  /  /  /  / / / /       /  /
+	  /_/ /_/____/__/  /__/  /__/_/ /_/       /__/
+		
+		
+		-->
+		<title>Mon premier site</title>
+		<meta charset="utf-8"/>
+		<meta name="keywords" content="Taliesin, Mon_premier_site, changer">
+		<meta name="description" content="si en vous baladant sur mon site, vous aimez pas le fond d'ecran : allez-ici">
+		<link rel="stylesheet" type="text/css" href="css/OriginalStyle.css" id="testcss"/>
+		<script type="text/javascript"> 
+			function switchStyle(style){
+            document.getElementById("testcss").setAttribute("href", style);
+			sessionStorage.setItem("fond",style)
+			}
+			console.log(sessionStorage.getItem("fond"));
+			if(sessionStorage.getItem("fond")!=null) {
+			var couleur = sessionStorage.getItem("fond");
+			console.log(couleur);
+            document.getElementById("testcss").setAttribute("href", couleur);
+			}
+		</script>
+		<link rel="icon" href="image/plante piranha-T.png"/>
+	</head>
+	<body>
+		<header id="barre_nav">
+			<h1>	
+				Changer le style du site web
+			</h1>
+		</header>
+		<nav>
+			<a href="file:///C:/Users/talie/Desktop/Tavail/Mon_premier_site/projet/Projet.html" target=""> <input type="image" id="projet" src="image/projet.png"/> </a>
+			<a href="file:///C:/Users/talie/Desktop/Tavail/Mon_premier_site/liens/Liens.html" target=""> <input type="image" id="liens" src="image/liens.png"/> </a>
+			<a class="actif" href="" target=""> <input type="image" id="changer" src="image/changer.png"/> </a>
+		</nav>
+		<h2>
+		Fond :
+		<button onclick="switchStyle('css/OriginalStyle.css')">Original</button> 
+		<button onclick="switchStyle('css/FRouge.css')">rouge</button>
+		<button onclick="switchStyle('css/FBleu.css')">bleu</button>
+		<button onclick="switchStyle('css/FVert.css')">vert</button>
+		<button onclick="switchStyle('css/FViolet.css')">violet</button>
+		<button onclick="switchStyle('css/FBlanc.css')">blanc</button>
+		<button onclick="switchStyle('css/FNoir.css')">noir</button>
+		</h2>
+		<h3>
+			<a href="file:///C:/Users/talie/Desktop/Tavail/Mon_premier_site/Mon_premier_site.html" target=""> <input type="image" id="moins" src="image/return.png"/> </a>
+		</h3>
+		<footer>
+			<a href="#" > <img id="gif_plante" src="image/gif plante.gif"/> </a>
+		</footer>
+	</body>
+</html>

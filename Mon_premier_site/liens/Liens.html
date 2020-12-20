@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<!--
+		   ________   _________   _________   ____________
+		  / __  / /  / __  /  /  /  / __  /  /____   ____/
+		 / /_/ / /  / /_/ /  /__/  / /_/ /       /  /
+	    / __  / /  /  ___/  ___   / __  /       /  /
+	   / / / / /__/  /  /  /  /  / / / /       /  /
+	  /_/ /_/____/__/  /__/  /__/_/ /_/       /__/
+		
+		
+		-->
+		<title>Mon premier site</title>
+		<meta charset="utf-8"/>
+		<meta name="keywords" content="Taliesin, Mon_premier_site, liens">
+		<meta name="description" content="ceci est me permet d'utiliser des liens pour aller sur le site de mes prof.">
+		<link rel="stylesheet" type="text/css" href="css/OriginalStyle.css" id="testcss"/>
+		<script type="text/javascript"> 
+			console.log(sessionStorage.getItem("fond"));
+			if(sessionStorage.getItem("fond")!=null) {
+			var couleur = sessionStorage.getItem("fond");
+			console.log(couleur);
+            document.getElementById("testcss").setAttribute("href", couleur);
+			}
+		</script>
+		<link rel="icon" href="image/plante piranha-T.png"/>
+	</head>
+	<body>
+		<header id="barre_nav">
+			<h1>	
+				Liens
+			</h1>
+		</header>
+		<nav>
+			<a href="file:///C:/Users/talie/Desktop/Tavail/Mon_premier_site/projet/Projet.html" target=""> <input type="image" id="projet" src="image/projet.png"/> </a>
+			<a href="" class="actif" target=""> <input type="image" id="liens" src="image/liens.png"/> </a>
+			<a href="file:///C:/Users/talie/Desktop/Tavail/Mon_premier_site/changer/changer.html" target=""> <input type="image" id="changer" src="image/changer.png"/> </a>
+		</nav>
+		<p> Cours :</p>
+		<p> mickaël martin-nevot . <a href="http://www.mickael-martin-nevot.com/" target=""> <input type="image" id="moins" src="image/fleche_lien.png"/> </a> </p>
+		<p> Alain Casali . <a href="http://ens.casali.me/" target=""> <input type="image" id="moins" src="image/fleche_lien.png"/> </a> </p>
+		
+		<h3>
+			<a href="file:///C:/Users/talie/Desktop/Tavail/Mon_premier_site/Mon_premier_site.html" target=""> <input type="image" id="moins" src="image/return.png"/></a>
+		</h3>
+		<footer>
+			<a href="#" > <img id="gif_plante" src="image/gif plante.gif"/> </a>
+		</footer>
+	</body>
+</html>
